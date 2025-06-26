@@ -31,10 +31,39 @@
                 </h1>
             </div>
             <div id="form">
-
+                <p id="do">
+                    LET'S DO THIS!
+                </p>
+                <form id="my-form" action="/sign-up-form" method="post">
+                    <p class="form">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" name="fname" id="first_name" />
+                    </p>
+                    <p class="form">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="last_name" />
+                    </p>
+                    <p class="form">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p class="form">
+                        <label for="phone">PHONE</label>
+                        <input type="tel" name="phone" id="phone">
+                    </p>
+                    <p class="form">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </p>
+                    <p class="form">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </p>
+                </form>
             </div>
             <div id="footer">
-
+                <button type="submit" form="my-form">Create account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
