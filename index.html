@@ -32,32 +32,32 @@
             </div>
             <div id="form">
                 <p id="do">
-                    LET'S DO THIS!
+                    Let's do this!
                 </p>
-                <form id="my-form" action="/sign-up-form" method="post">
+                <form id="my-form" action="./index.html" method="post">
                     <p class="form">
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" name="fname" id="first_name" />
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="first_name" autofocus required/>
                     </p>
                     <p class="form">
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" name="lname" id="last_name" />
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="last_name" required/>
                     </p>
                     <p class="form">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required/>
                     </p>
                     <p class="form">
-                        <label for="phone">PHONE</label>
-                        <input type="tel" name="phone" id="phone">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
                     </p>
                     <p class="form">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="password">Password</label>
+                        <input class="password" type="password" name="password" id="password" pattern=".{6,}" required/>
                     </p>
                     <p class="form">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                        <label for="confirm_password">Confirm password</label>
+                        <input class="password" type="password" name="confirm_password" id="confirm_password" pattern=".{6,}" required/>
                     </p>
                 </form>
             </div>
